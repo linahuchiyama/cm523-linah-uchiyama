@@ -1,0 +1,48 @@
+/* ===== YOUR CSS GOES HERE ===== */
+/* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
+* {
+    font-family: times-new-roman, garamond, serif;
+  }
+  
+  
+  body {
+      background-color: #EFE8D6;
+  }
+  
+  p {
+      font-size: 1em;
+  }
+  
+  .welcome {
+    text-align: center;
+    padding: 5em;
+    color: #88191A;
+  }
+  
+  button{
+    padding: 1em;
+    border-radius: 25px;
+  }
+  
+  .first {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    gap: 5px;
+    padding-left: 5em;
+    padding-top: 3em;
+  }
+  
+  .homepage {
+    text-align: center;
+  }
+
+  #calmimg {
+    width: 500px;
+    padding: 2em;
+    float: right;
+  }
+  
+  .all{
+    display: grid;
+  }
