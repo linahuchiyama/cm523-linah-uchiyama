@@ -1,48 +1,224 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 * {
-    font-family: times-new-roman, garamond, serif;
-  }
-  
-  
-  body {
-      background-color: #EFE8D6;
-  }
-  
-  p {
-      font-size: 1em;
-  }
-  
-  .welcome {
-    text-align: center;
-    padding: 5em;
-    color: #88191A;
-  }
-  
-  button{
-    padding: 1em;
-    border-radius: 25px;
-  }
-  
-  .first {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    gap: 5px;
-    padding-left: 5em;
-    padding-top: 3em;
-  }
-  
-  .homepage {
-    text-align: center;
-  }
+  font-family: Helvetica, Arial, sans-serif;
+}
 
-  #calmimg {
-    width: 500px;
-    padding: 2em;
-    float: right;
+
+body {
+    background-color: #e7f7bc;
+}
+
+p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #FF4D02;
+}
+
+.welcome {
+  text-align: center;
+  padding: 5em;
+  color: #88191A;
+}
+
+button{
+  padding: 1em;
+  border-radius: 25px;
+  background-color: #FF4D02;
+  color: #88191A;
+}
+
+input[type='button'] {
+  margin-right: 0.15em;
+  background-color: #E5DA87;
+  padding: 1em;
+  border-radius: 30px;
+  color: #88191A;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="button"]:hover {
+  background-color: #FF4D02;
+  color: white;
+}
+
+.info1 {
+  color: #E5DA87;
+  padding-left: 10px;
+}
+
+.answer {
+  color: white;
+}
+
+.type {
+  display: inline-flex;
+}
+
+.steep {
+  display: inline-flex;
+}
+
+.flavor {
+  display: inline-flex;
+}
+
+.caffeine {
+  display: inline-flex;
+}
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 5px;
+  padding-top: 3em;
+  margin: 10px;
+}
+
+.content {
+  flex: 7;
+  display: none;
+  justify-content: space-between;
+}
+
+.btn-container {
+  flex: 7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.start {
+  color: white;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 5px;
+  padding-left: 5em;
+  padding-top: 3em;
+}
+
+
+.homepage {
+  text-align: center;
+}
+
+#calmimg {
+  width: 500px;
+  padding: 2em;
+  float: right;
+}
+
+.all{
+  display: grid;
+}
+
+.benefit {
+  padding: 2em;
+  color: #88191A;
+}
+
+.picture {
+  width: 40%;
+  margin: 70px;
+}
+
+.information {
+  width: 30%;
+  padding-top: 90px;
+}
+
+.information > * {
+  background-color: #FF4D02;
+  width: 200px;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+
+p{
+  margin: 6px;
+  color: #FF4D02;
+}
+
+h1{
+  text-align: center;
+}
+
+footer {
+  background-color: #E5DA87;
+  color: white;
+  font-size: 30px;
+  padding: 5em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.proposal {
+  background-color: #DAC93D;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.designdoc {
+  background-color: #DAC93D;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.uxreport {
+  background-color: #DAC93D;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.wireframes{
+  background-color: #DAC93D;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+  margin: auto;
+
+}
+
+.top {
+  font-size: 20px;
+  color: #FF4D02;
+}
+
+.start {
+  margin-right: 0.15em;
+  background-color: #E5DA87;
+  padding: 1em;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .wireframes {margin-bottom: 3em;}
+  .designdoc {margin-bottom: 3em;}
+  .proposal {margin-bottom: 3em;}
+  .uxreport {margin-bottom: 3em;}
+}
+
+@media screen and (max-width: 1300px) {
+  .btn-container.flex-container {
+    flex-direction: row;
   }
-  
-  .all{
-    display: grid;
-  }
+}
