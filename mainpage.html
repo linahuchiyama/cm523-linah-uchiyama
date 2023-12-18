@@ -18,25 +18,265 @@
     <script src="scripts/scripts.js" defer></script>
   </head>
   <body>
-    <div class="all">
-    <h1>what benefit do you want?</h1>
-    <div class="first" name="moodChoice">
-      <button class="calm" name="calm" onClick="toggleCalm()"> calming </button>
-      <button class="sleep" name="sleep" onClick="toggleSleep()"> sleep </button>
-      <button class="weight" name="weight" onClick="toggleWeight()"> weight loss </button>
-      <button class="congestion" name="congestion" onClick="toggleCongestion()"> congestion </button>
-      <button class="antioxidant" name="antioxidant" onClick="toggleAntioxidant()"> antioxidant </button>
-      <button class="blood" name="blood" onClick="toggleBlood()"> blood pressure </button>
-      <button class="nausea" name="nausea" onClick="toggleNausea()"> nausea </button>
-      <button class="invigorating" name="invigorating" onClick="toggleInvigorating()"> invigorating </button>
-      <button class="heart" name="heart" onClick="toggleHeart()"> heart </button>
+    
+    <h1 class="benefit">What's been the trouble?</h1>
+    <div class="btn-container">
+    <fieldset class="btn">
+      <!--update-->
+      <input type="button" id="sleep" name="sleep" value ="can't seem to sleep"><label for="sleep"></label>
+      <input type="button" id="sick" name="sick" value ="feelin' kinda sick"><label for="sick"></label>
+      <input type="button" id="nervous" name="nervous" value ="super nervous"><label for="nervous"></label>
+      <input type="button" id="stress" name="stress" value ="super stressed"><label for="stress"></label>
+      <input type="button" id="weight" name="weight" value ="trynna lose some extra pounds"><label for="weight"></label>
+      <input type="button" id="cold" name="cold" value ="I can feel a cold comin'"><label for="cold"></label>
+      <input type="button" id="nauseous" name="nauseous" value ="I'm nauseous"><label for="nauseous"></label>
+      <input type="button" id="awake" name="awake" value ="gotta wake up"><label for="awake"></label>
+      <input type="button" id="calm" name="calm" value ="just wanna calm down"><label for="calm"></label>
+    </fieldset>
+
+    <div id="page-zero" class="content">
+      <div class="picture">
+        <p class="top">You should try chamomile tea!</p>
+        <img src="/images/chamomile.png" alt="chamomile" width="600px" height="600px" class="chamomile">
+        <p>Chamomile is known to improve sleep quality. Not only that, it helps with antibacterial and anti-inflammatory effects. Our sources also tell us it’ll help out with blood sugar control and help with premenstrual syndrome (PMS). </p>
+      </div>
+  
+      <div class="information">
+        <div class="type">
+          <p class="info1">Type:</p> <p class="answer">Herbal</p>
+        </div>
+        <div class="steep">
+          <p class="info1">Steep Time:</p> <p class="answer">4-5 mins</p>
+        </div>
+        <div class="flavor">
+          <p class="info1">Flavor:</p> <p class="answer">Floral</p>
+        </div>
+        <div class="caffeine">
+          <p class="info1">Caffeine:</p> <p class="answer">None</p>
+        </div>
+      </div>
     </div>
-      
+
+      <div id="page-one" class="content">
+        <div class="picture">
+          <p class="top">You should try chrysanthemum tea!</p>
+          <img src="/images/chrysanthemum-tea.png" alt="Chrysanthemum" width="600px" height="600px" class="Chrysanthemum">
+          <p>It was once thought that drinking from the steam that flows between Chrysanthemums brings long life to people. 
+            So, to live a healthy and long life, people started making teas using these flowers.</p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Herbal</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">4-5 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Herbal</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">High</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-two" class="content">
+        <div class="picture">
+          <p class="top">You should try lavendar tea!</p>
+          <img src="/images/lavendar.png" alt="lavendar" width="700px" height="600px" class="lavendar">
+          <p>Lavender contains an oil that seems to have calming effects and might relax certain muscles. 
+            It also seems to have antibacterial and antifungal effects.</p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Black</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">3 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Earthy</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">High</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-three" class="content">
+        <div class="picture">
+          <p class="top">You should try earl grey tea!</p>
+          <img src="/images/earl-grey.png" alt="earl-grey" width="600px" height="600px" class="earl-grey">
+          <p>Earl Grey was a tea of the aristocracy. It is named after the British Prime Minister Charles Grey and 
+            said to be a favored brew for those special occasions. But traditionally, adding Bergamot to a black 
+            tea base was actually considered to be a way of covering up poor tea quality.</p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Black</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">3 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Earthy</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">None</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-four" class="content">
+        <div class="picture">
+          <p class="top">You should try ceylon tea!</p>
+          <img src="/images/ceylon.png" alt="ceylon" width="700px" height="600px" class="ceylon">
+          <p>Ceylon tea refers to tea produced in Sri Lanka's highlands. It's available in a number of colors, 
+            is rich in antioxidants and may help heart health, weight loss, and blood sugar management for type 2 diabetes. </p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Black</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">3 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Earthy</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">High</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-five" class="content">
+        <div class="picture">
+          <p class="top">You should try lemon tea!</p>
+          <img src="/images/lemon.png" alt="lemon" width="700px" height="600px" class="lemon">
+          <p>The citric acid content in lemons is remarkably high, aiding in purifying the liver. 
+            Consuming lemon tea on an empty stomach in the morning assists in getting rid of all 
+            the wastes and toxins accumulated in the liver and thereby detoxifies the body completely.</p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Herbal</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">4-5 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Sweet</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">None</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-six" class="content">
+        <div class="picture">
+          <p class="top">You should try ginger tea!</p>
+          <img src="/images/ginger.png" alt="ginger" width="700px" height="600px" class="ginger">
+          <p>Through many centuries and throughout civilizations, ginger and its pungent taste were 
+            considered to be aphrodisiac. It heats your insides, stimulates circulation while its intense 
+            scent wakens olfactory glands.</p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Herbal</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">4-5 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Spicy</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">None</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-seven" class="content">
+        <div class="picture">
+          <p class="top">You should try keemun tea!</p>
+          <img src="/images/keemun.png" alt="keemun" width="600px" height="600px" class="keemun">
+          <p>Keemun black tea is a bit of a paradox. It’s everywhere. You find on every grocery store’s tea aisle 
+            and every office break room. It’s a tea many people drink every day without realizing it, yet it’s also 
+            unexpectedly difficult to find, with many Keemun tea lovers in a constant search for it.</p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Black</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">3 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Earthy</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">High</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-eight" class="content">
+        <div class="picture">
+          <p class="top">You should try jasmine tea!</p>
+          <img src="/images/jasmine.webp" alt="jasmine" width="600px" height="600px" class="jasmine">
+          <p>Jasmine tea is a natural relaxant for the mind and body. Jasmine is known to have a calming 
+            effect on the nervous system, improving restlessness, irritability, and insomnia. 
+            The scent of Jasmine can be a more effective sedative than sleeping pills. 
+            Jasmine tea is also known to ease muscle tension.</p>
+        </div>
+    
+        <div class="information">
+          <div class="type">
+            <p class="info1">Type:</p> <p class="answer">Herbal</p>
+          </div>
+          <div class="steep">
+            <p class="info1">Steep Time:</p> <p class="answer">4-5 mins</p>
+          </div>
+          <div class="flavor">
+            <p class="info1">Flavor:</p> <p class="answer">Floral</p>
+          </div>
+          <div class="caffeine">
+            <p class="info1">Caffeine:</p> <p class="answer">None</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+    
+    
+<footer>
+  <div class="links">
+      <a class="proposal" href="https://docs.google.com/document/d/1Mb0MvKNq6ocOmf0uvAepDaK89LKsszTCVFGvjlm_ZzU/edit">proposal</a>  
+      <a class="designdoc" href="https://drive.google.com/file/d/1V19do6Y26F9dy42OglFhqYfe6K_H-qFK/view?usp=sharing">design document</a>
+      <a class="uxreport" href="https://docs.google.com/document/d/1uRmPzifc4kbGst4iFT-XcrGCLgPMzSt6sVhiO26b-Jc/edit?usp=sharing" style="text-decoration: none;">UX Report</a>
+      <a class="wireframes" href="https://www.figma.com/file/qSTRuiNU5tXjw9N5h0eKjP/CM523-Project-Wireframes1?type=design&node-id=0-1&mode=design&t=iULjprv1lPT2Ugid-0" style="text-decoration: none;">Wireframes</a>
+  </div>
+    </footer>
+
+
+
+    <!--
     <div>
         <img src ="https://cdn.pixabay.com/photo/2022/02/21/15/10/tea-7026981_1280.png" id="calmimg"
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffromgreatorigins.com%2Fproducts%2Fpeppermint-tea-bags&psig=AOvVaw1jLbxW5sHVhXj99s_Y7IDc&ust=1701286240225000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDn2qG354IDFQAAAAAdAAAAABAE"
-        id="sleep"
+        <img src="https://static.vecteezy.com/system/resources/previews/024/108/107/original/fresh-herbal-tea-cup-with-mint-isolated-on-transparent-background-png.png"
+        id="sleep">
+        <img src=""
     </div>
+  -->
     
     
     
